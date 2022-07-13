@@ -1,41 +1,43 @@
+[TOC]
+
 # 实现自己的脚手架工具
 
 ##  创建项目
 
 1. 创建index.js
 
-1. 创建package.json 
+2. 创建package.json 
 
- ```bash
- npm init -y
- ```
+    ```bash
+    npm init -y
+    ```
 
-1. 创建命令
+3. 创建命令
 
- 入口文件index.js中，添加如下指令(shebang也成为hashbang)
+    入口文件index.js中，添加如下指令(shebang也成为hashbang)
 
- ```js
- #! /usr/bin/env node
- console.log("learn_cli");
- ```
+    ```js
+    #! /usr/bin/env node
+    console.log("learn_cli");
+    ```
 
-  修改package.json
+4. 修改package.json
 
- ```json
- "bin":{
-   "learn":"index.js"
- }
- ```
+    ```json
+    "bin":{
+    "learn":"index.js"
+    }
+    ```
 
- 执行命令
+5. 执行命令
 
- ```bash
- $ npm link
- 
- added 1 package in 2s
- $ learn
- learn_cli
- ```
+    ```bash
+    $ npm link
+    
+    added 1 package in 2s
+    $ learn
+    learn_cli
+    ```
 
 
 
@@ -786,9 +788,9 @@ learn addstore user
 
 4. 发布到 npm registry上 	
 
-  ```bash
-  npm publish 
-  ```
+    ```bash
+    npm publish 
+    ```
 
 5. 更新仓库
 
